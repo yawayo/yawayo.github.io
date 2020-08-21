@@ -2,6 +2,9 @@
 temp=location.search.split("?")
 data=temp[1].split(":")
 status=data[0]
+
+alert(status)
+  
   
 var fso = new ActiveXObject('Scripting.FileSystemObject'),
       iStream=fso.OpenTextFile("store.html", 1, false);
@@ -10,6 +13,5 @@ var fso = new ActiveXObject('Scripting.FileSystemObject'),
   }        
   iStream.Close();
  
-alert(status)
 
 </script>
