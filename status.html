@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 $status = 0;
 $status = $_GET['status'];
 
@@ -6,3 +7,4 @@ echo "$status";
 @ $fp = fopen("store.php",'w+');
 fwrite($fp, $status);
 fclose($fp);
+</html>
