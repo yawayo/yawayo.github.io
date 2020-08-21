@@ -1,5 +1,23 @@
-<script>
-name="홍길동"
-jumsu=100
-location.href="test2.html?"+name+":"+jumsu
-</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
+       <html xmlns="http://www.w3.org/1999/xhtml">
+
+       <head>
+       <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+       <title>fs=Server CreateObject ("Scripting FileSystemObject")</title>
+       <script type="text/javascript">
+       function myFunction()
+       {
+           var fs = ActiveXObject("Scripting.FileSystemObject");
+           var f = fs.OpenTextFile("store.html", 8, true);
+           f.WriteLine("This text will be added to the end of file");
+           f.Close();
+       }
+       </script>
+       </head>
+
+       <body>
+       <input name="Text1" type="text" size="55" onblur="myFunction()" />
+
+       </body>
+
+       </html>
